@@ -26,7 +26,7 @@ export default function TelaJavaScript (props) {
           
           <Button 
             title="Back-end" 
-            onPress = { ()=>props.navigation.navigate('NodeJS') } 
+            onPress = { ()=>props.navigation.navigate('Node') } 
           />
         </View>
       </View>
