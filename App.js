@@ -1,4 +1,4 @@
-import { NavigationConteiner } from "@react-navigation/native";
+import { NavigationContainer } from "@react-navigation/native";
 import { createDrawerNavigator} from "@react-navigation/drawer";
 
 import TelaJavaScript from "./componentes/TelaJavaScript";
@@ -9,12 +9,12 @@ const MenuNav = createDrawerNavigator ();
 
 export default function App() {
   return (
-    <NavigationConteiner>
+    <NavigationContainer>
       <MenuNav.Navigator>
         <MenuNav.Screen name="Java Script" component={ TelaJavaScript } />
         <MenuNav.Screen name="Node" component={ TelaNode } />
         <MenuNav.Screen name="React" component={ TelaReact } />
       </MenuNav.Navigator>
-    </NavigationConteiner>
+    </NavigationContainer>
   );
 }
